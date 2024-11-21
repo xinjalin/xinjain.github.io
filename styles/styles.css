@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background-color: rgb(19, 20, 24);
+    --text-color: rgb(234, 234, 234);
+}
+
+body {
+    font-family: "Fira Code", monospace;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+#site-container {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 705px;
+    margin: auto;
+}
+
+#intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#intro h1 {
+    font-size: 15px;
+    line-height: 26.25px;
+    margin-top: 15px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#theme-toggle-btn {
+    /* Remove default button styling */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 15px;
+    outline: none;
+}
+
+#theme-toggle-btn:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+/* Style for the icons */
+#theme-toggle-btn i {
+    font-size: 19.2px;
+    color: var(--text-color);
+}
+
+/* Style on small devices */
+@media screen and (max-width: 480px) {
+    #intro {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #theme-toggle-btn {
+        display: none;
+    }
+
+    #intro h1 {
+        max-width: 100%;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode #theme-icon-sun {
+    display: none; /* Hide the sun icon in dark mode */
+}
+
+body.dark-mode #theme-icon-moon {
+    display: block; /* Show the moon icon in dark mode */
+}
+
+body.dark-mode {
+    --background-color: rgb(255, 255, 255);
+    --text-color: rgb(51, 51, 51);
+}
