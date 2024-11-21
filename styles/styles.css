@@ -6,6 +6,7 @@
 :root {
     --background-color: rgb(19, 20, 24);
     --text-color: rgb(234, 234, 234);
+    --bio-text-color: rgb(255, 89, 125);
 }
 
 body {
@@ -63,6 +64,32 @@ body {
     color: var(--text-color);
 }
 
+#bio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+#bio div {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+#bio p {
+    padding: 5px;
+    color: var(--text-color);
+}
+
+#bio a {
+    color: var(--bio-text-color);
+    text-decoration: none;
+}
+#bio i {
+    color: var(--bio-text-color);
+}
+
 /* Style on small devices */
 @media screen and (max-width: 480px) {
     #intro {
@@ -91,4 +118,5 @@ body.dark-mode #theme-icon-moon {
 body.dark-mode {
     --background-color: rgb(255, 255, 255);
     --text-color: rgb(51, 51, 51);
+    --bio-text-color: rgb(50, 87, 209);
 }
