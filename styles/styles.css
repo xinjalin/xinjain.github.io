@@ -90,6 +90,38 @@ body {
     color: var(--bio-text-color);
 }
 
+#apps {
+    display: flex;
+    flex-direction: column;
+}
+#apps h2 {
+    line-height: 26.25px;
+    font-size: 15px;
+    margin-block-end: 15px;
+    margin-block-start: 30px;
+    margin-top: 30px;
+    text-rendering: optimizeLegibility;
+}
+
+#app-list {
+    display: grid;
+    padding: 4px;
+    gap: 16px;
+    grid-template-columns: auto auto auto auto;
+}
+
+#app-item {
+    box-shadow: 0 1px 4px #888;
+    padding: 16px;
+    line-height: 1.1;
+    border-radius: 2px;
+}
+
+#app-icon {
+    max-width: 92px;
+    margin: 0 auto 16px auto;
+    display: block;
+}
 /* Style on small devices */
 @media screen and (max-width: 480px) {
     #intro {
