@@ -131,6 +131,9 @@ body {
     color: inherit;
     background-color: none;
 }
+#app-item:hover {
+    scale: 1.02;
+}
 
 #app-icon {
     max-width: 92px;
