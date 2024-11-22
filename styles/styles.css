@@ -91,6 +91,7 @@ body {
 }
 
 #apps {
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
 }
@@ -107,21 +108,43 @@ body {
     display: grid;
     padding: 4px;
     gap: 16px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    justify-content: center;
 }
 
 #app-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
     box-shadow: 0 1px 4px #888;
     padding: 16px;
     line-height: 1.1;
     border-radius: 2px;
+    min-width: 130px;
+    text-decoration: none;
+    color: inherit;
+    background-color: none;
 }
 
 #app-icon {
     max-width: 92px;
-    margin: 0 auto 16px auto;
-    display: block;
+    object-fit: scale-down;
+    /* margin: 10px; */
 }
+
+#app-text {
+    margin-top: 10px;
+    width: 100%; /* Make the text container span the full width */
+}
+
+#app-title {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
 /* Style on small devices */
 @media screen and (max-width: 480px) {
     #intro {
@@ -135,6 +158,10 @@ body {
 
     #intro h1 {
         max-width: 100%;
+    }
+
+    #app-list {
+        grid-template-columns: 1fr;
     }
 }
 
