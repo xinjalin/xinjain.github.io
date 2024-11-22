@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --background-color: rgb(19, 20, 24);
     --text-color: rgb(234, 234, 234);
@@ -26,6 +27,7 @@ body {
 }
 
 #intro {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -71,12 +73,14 @@ body {
     padding-top: 7.5px;
     padding-bottom: 7.5px;
 }
+
 #bio div {
     display: flex;
     flex-direction: row;
     padding-top: 15px;
     padding-bottom: 20px;
 }
+
 #bio p {
     padding: 5px;
     color: var(--text-color);
@@ -95,6 +99,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 #apps h2 {
     line-height: 26.25px;
     font-size: 15px;
@@ -108,7 +113,7 @@ body {
     display: grid;
     padding: 4px;
     gap: 16px;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
 }
 
@@ -121,7 +126,7 @@ body {
     padding: 16px;
     line-height: 1.1;
     border-radius: 2px;
-    min-width: 130px;
+    min-width: 200px;
     text-decoration: none;
     color: inherit;
     background-color: none;
@@ -142,9 +147,13 @@ body {
 #app-title {
     display: block;
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
+    margin-top: 5px;
     margin-bottom: 10px;
+}
+#app-description {
+    font-size: 13px;
 }
 
 /* Style on small devices */
