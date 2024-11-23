@@ -8,6 +8,8 @@
     --background-color: rgb(19, 20, 24);
     --text-color: rgb(234, 234, 234);
     --alt-text-color: rgb(255, 89, 125);
+    --app-background-1: rgba(255, 89, 125, 0.2);
+    --app-background-2: rgba(234, 234, 234, 0.3);
 }
 
 body {
@@ -135,9 +137,15 @@ body {
     color: inherit;
     background-color: none;
 }
+
 #app-item:hover {
-    scale: 1.02;
+    scale: 1.025;
     box-shadow: 0 3px 8px #888;
+    background: linear-gradient(
+        to bottom right,
+        var(--app-background-1),
+        var(--app-background-2)
+    );
 }
 
 #app-item i {
@@ -300,4 +308,6 @@ body.dark-mode {
     --background-color: rgb(255, 255, 255);
     --text-color: rgb(51, 51, 51);
     --alt-text-color: rgb(50, 87, 209);
+    --app-background-1: rgba(50, 87, 209, 0.2);
+    --app-background-2: rgba(51, 51, 51, 0.3);
 }
