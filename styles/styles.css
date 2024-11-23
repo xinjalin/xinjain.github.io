@@ -264,6 +264,7 @@ body {
 
 #social-footer-icons a:hover {
     color: var(--alt-text-color);
+    transition: color 0.5s;
 }
 
 /* Style on small devices */
