@@ -1,3 +1,4 @@
+// dark mode
 document.addEventListener("DOMContentLoaded", () => {
     const themeToggleBtn = document.getElementById("theme-toggle-btn");
     const sunIcon = document.getElementById("theme-icon-sun");
@@ -21,6 +22,25 @@ document.addEventListener("DOMContentLoaded", () => {
             sunIcon.style.display = "none";
             moonIcon.style.display = "inline-block";
             localStorage.setItem("theme", "dark-mode");
+        }
+    });
+});
+
+// search posts
+const searchInput = document.getElementById("search-input");
+const postList = document.getElementById("post-list");
+const posts = postList.querySelectorAll("li");
+
+searchInput.addEventListener("input", () => {
+    const filter = searchInput.value.toLowerCase();
+
+    posts.forEach((post) => {
+        const postTitle = post.querySelector("a").textContent.toLowerCase();
+
+        if (postTitle.includes(filter)) {
+            post.style.display = "";
+        } else {
+            post.style.display = "none";
         }
     });
 });
