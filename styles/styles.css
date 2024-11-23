@@ -140,8 +140,8 @@ body {
     box-shadow: 0 3px 8px #888;
 }
 
-#app-icon {
-    max-width: 92px;
+#app-item i {
+    font-size: 105px;
     object-fit: scale-down;
 }
 
