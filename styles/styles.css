@@ -137,6 +137,7 @@ body {
 }
 #app-item:hover {
     scale: 1.02;
+    box-shadow: 0 3px 8px #888;
 }
 
 #app-icon {
@@ -243,6 +244,26 @@ body {
 #post-list time {
     color: var(--text-color);
     padding-left: 16px;
+}
+
+/* footer section */
+#social-footer {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#social-footer-icons {
+    margin: auto;
+}
+#social-footer-icons a {
+    text-decoration: none;
+    color: #a9a9a9;
+    font-size: 22px;
+}
+
+#social-footer-icons a:hover {
+    color: var(--alt-text-color);
 }
 
 /* Style on small devices */
