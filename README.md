@@ -7,7 +7,7 @@ Welcome to the repository for my personal portfolio website! This project showca
 ## Features
 
 - **About Me**: An introduction to my background and professional journey.
-- **Projects**: A showcase of my key projects, including brief descriptions, technologies used, and links to live demos or repositories.
+- **Projects**: A showcase of my key projects, including brief descriptions, technologies used, and links to repositories.
 - **Skills**: A list of technical skills, tools, and programming languages I am proficient in. [WIP]
 - **Posts**: Where I document skills and projects I have been working on [WIP]
 
