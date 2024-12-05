@@ -92,8 +92,32 @@ body {
     color: var(--text-color);
 }
 
+#typed-text-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
 #typed-text {
-    min-height: 120px;
+    display: inline;
+    word-wrap: break-word; /* Ensure long words wrap correctly */
+}
+
+#cursor {
+    position: absolute;
+    display: inline-block;
+    animation: blink 0.7s steps(2, start) infinite;
+    vertical-align: bottom; /* Align cursor with text baseline */
+    height: 1em; /* Matches the height of text */
+}
+
+#typed-text {
+    white-space: pre-wrap; /* Preserve line breaks and wrapping */
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
 
 #bio a {
