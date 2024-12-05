@@ -100,6 +100,7 @@ body {
 #typed-text {
     display: inline;
     word-wrap: break-word; /* Ensure long words wrap correctly */
+    min-height: 120px;
 }
 
 #cursor {
